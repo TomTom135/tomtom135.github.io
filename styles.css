@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
+
+body {
+height: 100%;
+  background-color: #372f3a;
+  background-image: url(img/FondoInicio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 1200px;
+}
+
+header {
+  background-color: #2d013a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 20px;
+}
+
+header .logo:hover {
+  scale: 1.2;
+}
+
+header .logo {
+  transition: all 0.5s;
+}
+
+header nav .ulLinks {
+  list-style: none;
+}
+
+header nav .ulLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  transition: 0.2s;
+}
+
+header nav .ulLinks a {
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+header nav .ulLinks li:hover {
+  scale: 1.2;
+}
+
+.inicio {
+  background-color: rgb(55, 47, 58, 50%);
+  border: 2px solid black;
+}
+
+.inicio .inicioContenido {
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.inicio h1 {
+  font-size: 65px;
+  
+}
+
+.inicio h2 {
+  font-size: 30px;
+}
+
+.productos {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.productosContenido {
+    text-align: center; 
+}
+
+.productosContenido h1{
+    font-size: 45px;
+    border: 2px solid black; 
+    padding: 10px; 
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(55, 47, 58, 50%); 
+}
+
+.carrusel button{
+    border-radius: 50%;
+    background-color: rgb(55, 47, 58, 40%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.carrusel button:hover{
+    scale: 1.1;
+}
+
+.carrusel button img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    background-color: rgb(55, 47, 58, 40%);
+    display: block;
+}
+
+.carrusel img{
+    height: 500px;
+    width: auto;
+}
+
+footer {
+  background-color: #2d013a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 20%;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+footer ul li:hover{
+    scale: 1.2;
+}
+
+footer h1{
+    color: white;
+}
+
+footer img{
+    height: 50px;
+    width: auto;
+}
+
+.productosPag {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    max-width: 1200px;
+    margin: 0 auto; 
+    transition: 0.2s;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.zapa {
+    border: 1px solid #000000; /* Borde de los productos */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centrar el texto */
+    background-color: rgb(55, 47, 58, 50%); /* Color de fondo */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.zapa:hover{
+    scale: 1.1;
+}
+
+.zapa img{
+    height: 200px;
+    width: 200px;
+}

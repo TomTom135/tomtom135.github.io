@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo Deportes</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="img/LogoMorado.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="img/LogoMorado.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="ulLinks">
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="">Sobre Nosotros</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="inicio">
+      <div class="inicioContenido">
+        <h1>Todo Deportes</h1>
+        <h2>El Mejor Calzado Deportivo.</h2>
+      </div>
+    </section>
+    <section class="productos">
+      <div class="productosContenido">
+        <h1>Algunos De Nuestros Productos</h1>
+        <article class="carruselArticle">
+          <div class="carrusel">
+            <button class="atrasBtn" onclick="atras()">
+              <img src="img/FlechaIzq.png" alt="Atras" />
+            </button>
+            <img src="img/Zapa1.png" alt="Producto" id="fotoCarrusel" />
+            <button class="adelanteBtn" onclick="adelante()">
+              <img src="img/FlechaDer.png" alt="Adelante" />
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <h1>Nuestras Redes Sociales</h1>
+      <ul>
+        <li>
+          <a href="www.facebook.com"
+            ><img src="img/FacebookLogo.png" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="www.instagram.com"
+            ><img src="img/InstagramLogo.png" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="www.x.com"><img src="img/XLogo.png" alt="X" /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script defer src="carrusel.js"></script>
 </html>
