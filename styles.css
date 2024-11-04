@@ -11,7 +11,7 @@
 }
 
 body {
-height: 100%;
+  height: 100%;
   background-color: #372f3a;
   background-image: url(img/FondoInicio.jpg);
   background-repeat: no-repeat;
@@ -69,7 +69,6 @@ header nav .ulLinks li:hover {
 
 .inicio h1 {
   font-size: 65px;
-  
 }
 
 .inicio h2 {
@@ -77,47 +76,49 @@ header nav .ulLinks li:hover {
 }
 
 .productos {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .productosContenido {
-    text-align: center; 
+  text-align: center;
 }
 
-.productosContenido h1{
-    font-size: 45px;
-    border: 2px solid black; 
-    padding: 10px; 
-    margin: 20px;
-    border-radius: 20px;
-    background-color: rgb(55, 47, 58, 50%); 
+.productosContenido h1 {
+  font-size: 45px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgb(55, 47, 58, 50%);
+  box-shadow: 0 4px 8px #2d013a;
 }
 
-.carrusel button{
-    border-radius: 50%;
-    background-color: rgb(55, 47, 58, 40%);
-    cursor: pointer;
-    transition: 0.2s;
+.carrusel button {
+  border-radius: 50%;
+  background-color: rgb(55, 47, 58, 40%);
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 8px #2d013a;
 }
 
-.carrusel button:hover{
-    scale: 1.1;
+.carrusel button:hover {
+  scale: 1.1;
 }
 
-.carrusel button img{
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-    background-color: rgb(55, 47, 58, 40%);
-    display: block;
+.carrusel button img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  background-color: rgb(55, 47, 58, 40%);
+  display: block;
 }
 
-.carrusel img{
-    height: 500px;
-    width: auto;
+.carrusel img {
+  height: 500px;
+  width: auto;
 }
 
 footer {
@@ -129,52 +130,87 @@ footer {
   padding: 5px 20%;
 }
 
-footer ul{
-    list-style: none;
+footer ul {
+  list-style: none;
 }
 
-footer ul li{
-    display: inline-block;
-    padding: 0 20px;
-    transition: 0.2s;
+footer ul li {
+  display: inline-block;
+  padding: 0 20px;
+  transition: 0.2s;
 }
 
-footer ul li:hover{
-    scale: 1.2;
+footer ul li:hover {
+  scale: 1.2;
 }
 
-footer h1{
-    color: white;
+footer h1 {
+  color: white;
 }
 
-footer img{
-    height: 50px;
-    width: auto;
+footer img {
+  height: 50px;
+  width: auto;
 }
 
 .productosPag {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 20px; /* Espacio entre los elementos */
-    max-width: 1200px;
-    margin: 0 auto; 
-    transition: 0.2s;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 20px; /* Espacio entre los elementos */
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: 0.2s;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .zapa {
-    border: 1px solid #000000; /* Borde de los productos */
-    padding: 10px; /* Espacio interno */
-    text-align: center; /* Centrar el texto */
-    background-color: rgb(55, 47, 58, 50%); /* Color de fondo */
-    border-radius: 5px; /* Esquinas redondeadas */
+  border: 1px solid black; /* Borde de los productos */
+  padding: 10px; /* Espacio interno */
+  text-align: center; /* Centrar el texto */
+  background-color: rgb(55, 47, 58, 50%); /* Color de fondo */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px #2d013a;
 }
 
-.zapa:hover{
-    scale: 1.1;
+.zapa:hover {
+  scale: 1.1;
 }
 
-.zapa img{
-    height: 200px;
-    width: 200px;
+.zapa img {
+  height: 200px;
+  width: 200px;
+}
+
+.Nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.infoSobreNos {
+  background-color: rgb(55, 47, 58, 50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #2d013a;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: left;
+}
+
+.infoSobreNos h1{
+    font-size: 40px;
+    text-shadow: 0 4px 8px #2d013a;
+}
+
+.infoSobreNos b{
+    font-size: 20px;
+}
+
+.infoSobreNos strong{
+    font-size: 26px;
+}
+
+.infoSobreNos p{
+    font-size: 18px;
 }
