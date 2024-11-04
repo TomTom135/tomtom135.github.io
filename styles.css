@@ -58,7 +58,7 @@ header nav .ulLinks li:hover {
 
 .inicio {
   background-color: rgb(55, 47, 58, 50%);
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .inicio .inicioContenido {
@@ -69,10 +69,12 @@ header nav .ulLinks li:hover {
 
 .inicio h1 {
   font-size: 65px;
+  text-shadow: 0 4px 8px #ffffff;
 }
 
 .inicio h2 {
   font-size: 30px;
+  text-shadow: 0 4px 8px #ffffff;
 }
 
 .productos {
@@ -198,19 +200,79 @@ footer img {
   text-align: left;
 }
 
-.infoSobreNos h1{
-    font-size: 40px;
-    text-shadow: 0 4px 8px #2d013a;
+.infoSobreNos h1 {
+  font-size: 40px;
+  text-shadow: 0 4px 8px #2d013a;
 }
 
-.infoSobreNos b{
-    font-size: 20px;
+.infoSobreNos b {
+  font-size: 20px;
 }
 
-.infoSobreNos strong{
-    font-size: 26px;
+.infoSobreNos strong {
+  font-size: 26px;
 }
 
-.infoSobreNos p{
-    font-size: 18px;
+.infoSobreNos p {
+  font-size: 18px;
+}
+
+.contacto {
+    background-color: rgb(55, 47, 58, 50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #2d013a;
+    padding: 85px 20px;
+    max-width: 400px;
+    margin: auto;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #2d013a;
+    background-color: rgb(35, 32, 36, 50%);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #2d013a;
+    background-color: rgb(35, 32, 36, 50%);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(35, 32, 36, 50%);
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 0 4px 8px white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d013a;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    resize: vertical; 
+    background-color: rgb(35, 32, 36, 50%);
 }
