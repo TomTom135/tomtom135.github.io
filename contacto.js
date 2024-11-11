@@ -1,41 +1,57 @@
+function mostrarError(campo, mensaje) {
+    const errorElemento = document.getElementById("error" + campo.charAt(0).toUpperCase() + campo.slice(1));
+    errorElemento.textContent = mensaje;
+    errorElemento.style.display = "block"; // Mostrar el mensaje de error
+}
+
+function ocultarError(campo) {
+    const errorElemento = document.getElementById("error" + campo.charAt(0).toUpperCase() + campo.slice(1));
+    errorElemento.style.display = "none"; // Ocultar el mensaje de error
+}
+
 function validarFormulario() {
-    //recibe lo ingresado en el formulario
-    const nombre = document.getElementById('nombre').value.trim();
-    const apellido = document.getElementById('apellido').value.trim();
-    const correo = document.getElementById('correo').value.trim();
-    const comentarios = document.getElementById('comentarios').value.trim(); 
-    const mensaje = document.getElementById('mensaje');
+    let esValido = true;
 
-    //para limpiar el mensaje anterior
-    mensaje.textContent = '';
-
-    //validar que nada este vacio
-    if (!nombre || !apellido || !correo) {
-        mensaje.textContent = 'Por favor, completa todos los campos obligatorios.';
-        return false; 
+    // Validar "nombre"
+    const nombre = document.getElementById("nombre").value.trim();
+    if (!nombre) {
+        mostrarError("Nombre", "Este campo es obligatorio.");
+        esValido = false;
+    } else {
+        ocultarError("Nombre");
     }
 
-    //validar nombre
-    const nombreApellidoRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
-    if (!nombreApellidoRegex.test(nombre) || !nombreApellidoRegex.test(apellido)) {
-        mensaje.textContent = 'El nombre y el apellido solo pueden contener letras.';
-        return false; 
+    // Validar "apellido"
+    const apellido = document.getElementById("apellido").value.trim();
+    if (!apellido) {
+        mostrarError("Apellido", "Este campo es obligatorio.");
+        esValido = false;
+    } else {
+        ocultarError("Apellido");
     }
 
-    //validar correo
-    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!correoRegex.test(correo)) {
-        mensaje.textContent = 'Por favor, ingresa un correo electrónico válido.';
-        return false; 
+    // Validar "correo"
+    const correo = document.getElementById("correo").value.trim();
+    const regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!correo) {
+        mostrarError("Correo", "Este campo es obligatorio.");
+        esValido = false;
+    } else if (!regexCorreo.test(correo)) {
+        mostrarError("Correo", "Por favor, ingresa un correo electrónico válido.");
+        esValido = false;
+    } else {
+        ocultarError("Correo");
     }
 
-    //validar comentario (cuido que no pasen los 500 caracteres, es comentario no novela)
-    if (comentarios.length > 500) { 
-        mensaje.textContent = 'Los comentarios no pueden exceder los 500 caracteres.';
-        return false;
+    // Validar "comentarios"
+    const comentarios = document.getElementById("comentarios").value.trim();
+    if (comentarios.length > 500) {
+        mostrarError("Comentarios", "Los comentarios no deben superar los 500 caracteres.");
+        esValido = false;
+    } else {
+        ocultarError("Comentarios");
     }
 
-    //solo sale una alerta confirmando que se realizo correctamente el formulario y se enviaron los datos
-    alert('Formulario enviado correctamente.');
-    return true; //recien aca deja que envies el formulario, solo si cumple las demas validaciones
+    // Si algún campo es inválido, evitamos el envío del formulario
+    return esValido;
 }

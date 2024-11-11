@@ -218,61 +218,65 @@ footer img {
 }
 
 .contacto {
-    background-color: rgb(55, 47, 58, 50%);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px #2d013a;
-    padding: 85px 20px;
-    max-width: 400px;
-    margin: auto;
-    
+  background-color: rgb(55, 47, 58, 50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #2d013a;
+  padding: 85px 20px;
+  max-width: 400px;
+  margin: auto;
 }
 
 h1 {
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px #2d013a;
-    background-color: rgb(35, 32, 36, 50%);
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #2d013a;
+  background-color: rgb(35, 32, 36, 50%);
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
+  display: block;
+  margin: 10px 0 5px;
 }
 
 input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px #2d013a;
-    background-color: rgb(35, 32, 36, 50%);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #2d013a;
+  background-color: rgb(35, 32, 36, 50%);
 }
 
 button {
-    
-    padding: 10px;
-    background-color: rgb(35, 32, 36, 50%);
-    color: #ffffff;
-    font-size: 30px;
-    text-shadow: 0 4px 8px white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: rgb(35, 32, 36, 50%);
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 0 4px 8px white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #2d013a;
+  background-color: #2d013a;
 }
 
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 15px;
-    resize: vertical; 
-    background-color: rgb(35, 32, 36, 50%);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  resize: vertical;
+  background-color: rgb(35, 32, 36, 50%);
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none; /* Ocultamos los mensajes de error por defecto */
 }
